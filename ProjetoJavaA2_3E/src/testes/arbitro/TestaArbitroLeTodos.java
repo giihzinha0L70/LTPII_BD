@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testes.arbitro;
 
-/**
- *
- * @author 363707
- */
+import modelo.Arbitro;
+import persistencia.ArbitroDAO;
+
+import java.util.List;
+
 public class TestaArbitroLeTodos {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        // Chamando o método leTodos para obter todos os árbitros
+        List<Arbitro> arbitros = ArbitroDAO.leTodos();
+
+        // Exibindo todos os árbitros
+        for (Arbitro arbitro : arbitros) {
+            System.out.println("Nome: " + arbitro.getNome());
+            System.out.println("Idade: " + arbitro.getIdade());
+            System.out.println("Certificado: " + arbitro.getCertificado());
+            System.out.println("-------------");
+        }
     }
-    
 }

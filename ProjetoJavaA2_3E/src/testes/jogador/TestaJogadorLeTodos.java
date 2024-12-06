@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testes.jogador;
 
-/**
- *
- * @author 363707
- */
+import modelo.Jogador;
+import persistencia.JogadorDAO;
+
+import java.util.List;
+
 public class TestaJogadorLeTodos {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        // Chamando o método leTodos para obter todos os jogadores
+        List<Jogador> jogadores = JogadorDAO.leTodos();
+
+        // Exibindo todos os jogadores
+        for (Jogador jogador : jogadores) {
+            System.out.println("Nome: " + jogador.getNome());
+            System.out.println("Idade: " + jogador.getIdade());
+            System.out.println("Posição: " + jogador.getPosicao());
+            System.out.println("-------------");
+        }
     }
-    
 }

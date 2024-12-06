@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/estatisticas/TestaEstatisticasAltera.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/estatisticas/TestaEstatisticasLeTodos.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/time/TestaTimeAltera.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/estatisticas/TestaEstatisticasExclui.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/arbitro/TestaArbitroLeUm.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/time/TestaTimeExclui.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/persistencia/EstatisticasDAO.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/time/TestaTimeLeUm.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogador/TestaJogadorGrava.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogo/TestaJogoGrava.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogador/TestaJogadorLeTodos.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogo/TestaJogoLeUm.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/arbitro/TestaArbitroLeTodos.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/persistencia/GerenteDeConexao.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/treinador/TestaTreinadorExclui.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogo/TestaJogoAltera.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/persistencia/ArbitroDAO.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/treinador/TestaTreinadorGrava.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogo/TestaJogoLeTodos.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/arbitro/TestaArbitroGrava.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/treinador/TestaTreinadorLeUm.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/arbitro/TestaArbitroAltera.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/time/TestaTimeLeTodos.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/treinador/TestaTreinadorAltera.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/arbitro/TestaArbitroExclui.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/estatisticas/TestaEstatisticasGrava.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/time/TestaTimeGrava.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogador/TestaJogadorAltera.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogo/TestaJogoExclui.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogador/TestaJogadorLeUm.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/treinador/TestaTreinadorLeTodos.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/estatisticas/TestaEstatisticasLeUm.java</file>
+            <file>file:/C:/Users/TEMP.ETB.006/Downloads/LTPII_BD-main/LTPII_BD-main/ProjetoJavaA2_3E/src/testes/jogador/TestaJogadorExclui.java</file>
+        </group>
+    </open-files>
 </project-private>

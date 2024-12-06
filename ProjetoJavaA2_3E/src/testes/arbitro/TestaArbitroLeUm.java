@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testes.arbitro;
 
-/**
- *
- * @author 363707
- */
+import modelo.Arbitro;
+import persistencia.ArbitroDAO;
+
 public class TestaArbitroLeUm {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        // Chamando o método leUm para obter o árbitro pelo nome
+        Arbitro arbitro = ArbitroDAO.leUm("Carlos Silva");
+
+        // Exibindo o árbitro
+        if (arbitro != null) {
+            System.out.println("Nome: " + arbitro.getNome());
+            System.out.println("Idade: " + arbitro.getIdade());
+            System.out.println("Certificado: " + arbitro.getCertificado());
+        } else {
+            System.out.println("Árbitro não encontrado.");
+        }
     }
-    
 }

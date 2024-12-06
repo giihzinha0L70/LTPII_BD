@@ -3,66 +3,63 @@ package persistencia;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import modelo.Treinador;
+import modelo.Time;
 
-public class TreinadorDAO {
+public class TimeDAO {
     protected static Connection connection;
     protected static PreparedStatement st;
     protected static ResultSet rs;
 
-    public static List<Treinador> leTodos() throws Exception {
-        List<Treinador> listTreinadores = new ArrayList<Treinador>();
+    public static List<Time> leTodos() throws Exception {
+        List<Time> listTimes = new ArrayList<Time>();
         try {
-            String sql = "SELECT * FROM Treinador";
+            String sql = "SELECT * FROM Time";
             connection = GerenteDeConexao.getConnection();
             st = connection.prepareStatement(sql);
             rs = st.executeQuery();
 
             while (rs.next()) {
-                Treinador treinador = new Treinador();
-                treinador.setNome(rs.getString("nome"));
-                treinador.setIdade(rs.getInt("idade"));
-                treinador.setTime(TimeDAO.leUm(rs.getString("time_nome")));
-                listTreinadores.add(treinador);
+                Time time = new Time();
+                time.setNome(rs.getString("nome"));
+                time.setCidade(rs.getString("cidade"));
+                listTimes.add(time);
             }
             st.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        return listTreinadores;
+        return listTimes;
     }
 
-    public static Treinador leUm(String nome) throws Exception {
-        Treinador treinador = null;
+    public static Time leUm(String nome) throws Exception {
+        Time time = null;
         try {
-            String sql = "SELECT * FROM Treinador WHERE nome = ?";
+            String sql = "SELECT * FROM Time WHERE nome = ?";
             connection = GerenteDeConexao.getConnection();
             st = connection.prepareStatement(sql);
             st.setString(1, nome);
             rs = st.executeQuery();
 
             if (rs.next()) {
-                treinador = new Treinador();
-                treinador.setNome(rs.getString("nome"));
-                treinador.setIdade(rs.getInt("idade"));
-                treinador.setTime(TimeDAO.leUm(rs.getString("time_nome")));
+                time = new Time();
+                time.setNome(rs.getString("nome"));
+                time.setCidade(rs.getString("cidade"));
             }
             st.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        return treinador;
+        return time;
     }
 
-    public static int grava(Treinador treinador) throws Exception {
+    public static int grava(Time time) throws Exception {
         int ret = 0;
         try {
-            String sql = "INSERT INTO Treinador (nome, idade, time_nome) VALUES (?, ?, ?)";
+            String sql = "INSERT INTO Time (nome, cidade) VALUES (?, ?)";
             connection = GerenteDeConexao.getConnection();
             st = connection.prepareStatement(sql);
-            st.setString(1, treinador.getNome());
-            st.setInt(2, treinador.getIdade());
-            st.setString(3, treinador.getTime().getNome());
+            st.setString(1, time.getNome());
+            st.setString(2, time.getCidade());
             ret = st.executeUpdate();
             st.close();
         } catch (SQLException e) {
@@ -71,15 +68,14 @@ public class TreinadorDAO {
         return ret;
     }
 
-    public static int altera(Treinador treinador) throws Exception {
+    public static int altera(Time time) throws Exception {
         int ret = 0;
         try {
-            String sql = "UPDATE Treinador SET idade = ?, time_nome = ? WHERE nome = ?";
+            String sql = "UPDATE Time SET cidade = ? WHERE nome = ?";
             connection = GerenteDeConexao.getConnection();
             st = connection.prepareStatement(sql);
-            st.setInt(1, treinador.getIdade());
-            st.setString(2, treinador.getTime().getNome());
-            st.setString(3, treinador.getNome());
+            st.setString(1, time.getCidade());
+            st.setString(2, time.getNome());
             ret = st.executeUpdate();
             st.close();
         } catch (SQLException e) {
@@ -91,7 +87,7 @@ public class TreinadorDAO {
     public static int exclui(String nome) throws Exception {
         int ret = 0;
         try {
-            String sql = "DELETE FROM Treinador WHERE nome = ?";
+            String sql = "DELETE FROM Time WHERE nome = ?";
             connection = GerenteDeConexao.getConnection();
             st = connection.prepareStatement(sql);
             st.setString(1, nome);

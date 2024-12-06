@@ -1,21 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testes.arbitro;
 
-/**
- *
- * @author 363707
- */
+import persistencia.ArbitroDAO;
+
 public class TestaArbitroExclui {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        // Nome do árbitro a ser excluído
+        String nomeArbitro = "Carlos Silva Alterado";
+
+        // Chamando o método de exclusão
+        System.out.println(ArbitroDAO.exclui(nomeArbitro));
     }
-    
 }

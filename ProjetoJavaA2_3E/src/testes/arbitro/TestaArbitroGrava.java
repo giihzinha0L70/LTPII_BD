@@ -1,21 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testes.arbitro;
 
-/**
- *
- * @author 363707
- */
+import modelo.Arbitro;
+import persistencia.ArbitroDAO;
+
 public class TestaArbitroGrava {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        // Criando um novo árbitro
+        Arbitro arbitro = new Arbitro();
+        arbitro.setNome("Carlos Silva");
+        arbitro.setIdade(40);
+        arbitro.setCertificado("CBF12345");
+
+        // Chamando o método de gravação
+        System.out.println(ArbitroDAO.grava(arbitro));
     }
-    
 }

@@ -1,21 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testes.treinador;
 
-/**
- *
- * @author 363707
- */
+import modelo.Treinador;
+import modelo.Time;
+import persistencia.TreinadorDAO;
+
 public class TestaTreinadorAltera {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        // Criando objeto Treinador e setando valores
+        Treinador treinador = new Treinador();
+        treinador.setNome("Eduardo Souza");
+        treinador.setIdade(45);
+        treinador.setExperiencia(15);
+
+        // Associando o time ao treinador
+        Time time = new Time();
+        time.setNome("Flamengo");
+        treinador.setTime(time);
+
+        // Alterando as informações do treinador
+        treinador.setNome("Eduardo Souza Alterado");
+        treinador.setIdade(46);
+        treinador.setExperiencia(16);
+
+        // Chamando o método de alteração
+        System.out.println(TreinadorDAO.altera(treinador));
     }
-    
 }
